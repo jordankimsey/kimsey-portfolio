@@ -14,6 +14,7 @@ frontend_react/build
 # misc
 backend_sanity/.DS_Store
 frontend_react/.env.local
+frontend_react/.env
 frontend_react/.env.development.local
 frontend_react/.env.test.local
 frontend_react/.env.production.local
