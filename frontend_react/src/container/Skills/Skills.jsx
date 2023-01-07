@@ -37,18 +37,18 @@ const Skills = () => {
   const [experience, setExperience] = useState(myExperiences);
   const [skills, setSkills] = useState(mySkills);
 
-  useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
-    // client.fetch(query).then((data) => {
-    //   setExperience(data);
+  // useEffect(() => {
+  //   const query = '*[_type == "experiences"]';
+  //   const skillsQuery = '*[_type == "skills"]';
+  //   // client.fetch(query).then((data) => {
+  //   //   setExperience(data);
 
-    // });
-    // client.fetch(skillsQuery).then((data) => {
-    //   setSkills(data);
+  //   // });
+  //   // client.fetch(skillsQuery).then((data) => {
+  //   //   setSkills(data);
 
-    // });
-  }, []);
+  //   // });
+  // }, []);
 
   return (
     <>
@@ -56,7 +56,7 @@ const Skills = () => {
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>
-          {skills.map((skill) => (
+          {skills?.map((skill, index) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
@@ -75,28 +75,27 @@ const Skills = () => {
         </motion.div>
 
         <motion.div className='app__skills-exp'>
-          {experience.map((work) => (
+          {experience?.map((work) => (
             <>
               <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5 }}
-                className='app__skills-exp-work'
-                data-tip-content={work.desc}
-                data-for={work.name}
-                key={work.name}
+                className='app__skills-exp-works'
+                // data-tooltip-content={work.desc}
+                id={work.company}
+                key={work.company}
               >
                 <h4 className='bold-text'>{work.name}</h4>
                 <p className='p-text'>{work.company}</p>
+                <p className='p-text'>{work.desc}</p>
               </motion.div>
-              <Tooltip
-                id={work.name}
-                anchorId={work.name}
+              {/* <Tooltip
+                anchorId={work.company}
                 effect='solid'
                 arrowColor='#fff'
+                // content={work.desc}
                 className='skills-tooltip'
-              />
-                {/* {work.desc}
-              </Tooltip> */}
+              /> */}
             </>
           ))}
         </motion.div>
@@ -105,4 +104,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default AppWrap(Skills, 'skills');
