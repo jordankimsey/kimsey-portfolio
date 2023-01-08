@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { urlFor, client } from '../../client';
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
-import { Tooltip } from 'react-tooltip';
+
 import './Skills.scss';
 
 const mySkills = [
   { name: 'React', icon: images.react },
+  { name: 'Next.js', icon: images.next },
   { name: 'Typescript', icon: images.typescript },
   { name: 'Javascript', icon: images.javascript },
   { name: 'GraphQL', icon: images.graphql },
+  { name: 'MaterialUI', icon: images.mu5 },
+  { name: 'AWS', icon: images.aws },
   { name: 'Node', icon: images.node },
   { name: 'Python', icon: images.python },
   { name: 'Git', icon: images.git },
-  { name: 'MaterialUI', icon: images.mu5 },
   { name: 'HTML', icon: images.html },
-  { name: 'SASS', icon: images.sass },
   { name: 'CSS', icon: images.css },
+  { name: 'SASS', icon: images.sass },
 ];
 
 const myExperiences = [
@@ -34,29 +34,13 @@ const myExperiences = [
 ];
 
 const Skills = () => {
-  const [experience, setExperience] = useState(myExperiences);
-  const [skills, setSkills] = useState(mySkills);
-
-  // useEffect(() => {
-  //   const query = '*[_type == "experiences"]';
-  //   const skillsQuery = '*[_type == "skills"]';
-  //   // client.fetch(query).then((data) => {
-  //   //   setExperience(data);
-
-  //   // });
-  //   // client.fetch(skillsQuery).then((data) => {
-  //   //   setSkills(data);
-
-  //   // });
-  // }, []);
-
   return (
     <>
       <h2 className='head-text'>Skills & Experience</h2>
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>
-          {skills?.map((skill, index) => (
+          {mySkills.map((skill, index) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
@@ -75,13 +59,12 @@ const Skills = () => {
         </motion.div>
 
         <motion.div className='app__skills-exp'>
-          {experience?.map((work) => (
+          {myExperiences.map((work) => (
             <>
               <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5 }}
                 className='app__skills-exp-works'
-                // data-tooltip-content={work.desc}
                 id={work.company}
                 key={work.company}
               >
@@ -89,13 +72,6 @@ const Skills = () => {
                 <p className='p-text'>{work.company}</p>
                 <p className='p-text'>{work.desc}</p>
               </motion.div>
-              {/* <Tooltip
-                anchorId={work.company}
-                effect='solid'
-                arrowColor='#fff'
-                // content={work.desc}
-                className='skills-tooltip'
-              /> */}
             </>
           ))}
         </motion.div>

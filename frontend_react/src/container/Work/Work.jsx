@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
-// import { AppWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
 import { images } from '../../constants';
 import './Work.scss';
-import {AppWrap} from '../../wrapper'
+import { AppWrap } from '../../wrapper';
 
 const myWork = [
   {
@@ -14,7 +12,7 @@ const myWork = [
     projectLink: 'www.github.com',
     codeLink: 'www.github.com',
     imgUrl: images.about01,
-    tags: ['react'],
+    tags: ['React JS', 'All'],
   },
   {
     title: 'Modern UI/UX Website',
@@ -30,7 +28,7 @@ const myWork = [
     projectLink: 'www.github.com',
     codeLink: 'www.github.com',
     imgUrl: images.about03,
-    tags: ['React JS'],
+    tags: ['React JS', 'All'],
   },
 ];
 
@@ -40,14 +38,6 @@ const Work = () => {
 
   const [works, setWorks] = useState(myWork);
   const [filterWork, setFilterWork] = useState(myWork);
-
-  useEffect(() => {
-    const query = '*[_type == "works"]';
-    // client.fetch(query).then((data) => {
-    //   setWorks(data);
-    //   setFilterWork(data);
-    // });
-  }, []);
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -92,7 +82,6 @@ const Work = () => {
           <div className='app__work-item app__flex' key={index}>
             <div className='app__work-img app__flex'>
               <img src={work.imgUrl} alt={work.title} />
-              {/* <img src={urlFor(work.imgUrl)} alt={work.name} /> */}
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{
