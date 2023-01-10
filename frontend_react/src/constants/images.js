@@ -19,6 +19,10 @@ import typescript from '../assets/typescript.png';
 import next from '../assets/Nextjs-logo.svg';
 import aws from '../assets/aws.png';
 
+import airportHub from '../assets/airport-hub.jpg';
+import easybank from '../assets/easybank.jpg';
+import dashboard from '../assets/dashboard.jpg';
+
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
@@ -38,6 +42,9 @@ import fullBody from '../assets/full-body.png';
 import jordan from '../assets/jordan-png.png';
 
 export default {
+  airportHub,
+  easybank,
+  dashboard,
   jordan,
   fullBody,
   email,

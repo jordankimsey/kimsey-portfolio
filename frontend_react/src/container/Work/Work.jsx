@@ -8,27 +8,27 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 const myWork = [
   {
     title: 'AirportHub',
-    description: 'my app',
+    description: 'Built using Next.js/React, Firebase and tailwind.',
     projectLink: 'https://airport-hub.vercel.app/',
     codeLink: 'https://github.com/jordankimsey/airportHub',
-    imgUrl: images.about01,
-    tags: ['Next.JS', 'React JS', 'All'],
+    imgUrl: images.airportHub,
+    tags: ['Next.Js', 'All'],
   },
   {
     title: 'Shoppy Dashboard',
-    description: 'my app',
+    description: 'Built using React, tailwind and Syncfusion.',
     projectLink: 'https://react-dashboard-inky-alpha.vercel.app/ecommerce',
     codeLink: 'https://github.com/jordankimsey/react-dashboard',
-    imgUrl: images.about02,
+    imgUrl: images.dashboard,
     tags: ['React JS', 'All'],
   },
   {
     title: 'Easy Bank Landing Page',
-    description: 'my app',
+    description: 'Built using Next.js/React and MaterialUI',
     projectLink: 'https://easy-bank-landing-page-delta-gold.vercel.app/',
     codeLink: 'https://github.com/jordankimsey/easy-bank-landing-page',
-    imgUrl: images.about03,
-    tags: ['Next.Js', 'React JS', 'All'],
+    imgUrl: images.easybank,
+    tags: ['Next.Js', 'All'],
   },
 ];
 
@@ -55,23 +55,20 @@ const Work = () => {
   return (
     <>
       <h2 className='head-text'>
-        I know that <span>Good Development</span>
-        <br /> means <span>Good Business</span>
+        My <span>Works</span>
       </h2>
       <div className='app__work-filter'>
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map(
-          (item, index) => (
-            <div
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-              className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? 'item-active' : ''
-              }`}
-            >
-              {item}
-            </div>
-          )
-        )}
+        {['Next.Js', 'React JS', 'All'].map((item, index) => (
+          <div
+            key={index}
+            onClick={() => handleWorkFilter(item)}
+            className={`app__work-filter-item app__flex p-text ${
+              activeFilter === item ? 'item-active' : ''
+            }`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
       <motion.div
         animate={animateCard}
@@ -119,7 +116,10 @@ const Work = () => {
             </div>
             <div className='app__work-content app__flex'>
               <h4 className='bold-text'>{work.title}</h4>
-              <p className='p-text' style={{ marginTop: 10 }}>
+              <p
+                className='p-text'
+                style={{ marginTop: 10, textAlign: 'center' }}
+              >
                 {work.description}
               </p>
               <div className='app__work-tag app__flex'>
