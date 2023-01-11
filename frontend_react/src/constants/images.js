@@ -1,10 +1,9 @@
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
-import api from '../assets/api.png';
-import cpp from '../assets/cpp.png';
+
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
-import flutter from '../assets/flutter.png';
+import cloud from '../assets/cloud.webp'
 import git from '../assets/git.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
@@ -13,11 +12,13 @@ import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
-import redux from '../assets/redux.png';
+
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import next from '../assets/Nextjs-logo.svg';
 import aws from '../assets/aws.png';
+import mongodb from '../assets/mongodb.png';
+import express from '../assets/express.png';
 
 import airportHub from '../assets/airport-hub.jpg';
 import easybank from '../assets/easybank.jpg';
@@ -28,20 +29,22 @@ import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
+import accenture from '../assets/accenture.png';
+
 import circle from '../assets/circle.svg';
 
-import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
-import asus from '../assets/asus.png';
-import bolt from '../assets/bolt.png';
-import nb from '../assets/nb.png';
-import skype from '../assets/skype.png';
-import spotify from '../assets/spotify.png';
 
 import fullBody from '../assets/full-body.png';
 import jordan from '../assets/jordan-png.png';
+import gcfes from '../assets/gcfes1.png';
 
 export default {
+  cloud,
+  gcfes,
+  accenture,
+  mongodb,
+  express,
   airportHub,
   easybank,
   dashboard,
@@ -49,11 +52,10 @@ export default {
   fullBody,
   email,
   mobile,
-  api,
-  cpp,
+
   css,
   figma,
-  flutter,
+
   git,
   graphql,
   html,
@@ -62,7 +64,7 @@ export default {
   node,
   python,
   react,
-  redux,
+
   sass,
   typescript,
   about01,
@@ -70,13 +72,9 @@ export default {
   about03,
   about04,
   circle,
-  adidas,
+
   amazon,
-  asus,
-  bolt,
-  nb,
-  skype,
-  spotify,
+
   next,
   aws,
 };

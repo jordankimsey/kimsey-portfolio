@@ -7,23 +7,19 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 
 const aboutsArray = [
   {
-    title: 'Web Development',
-    description: 'I am a good web developer',
-    imgUrL: images.about01,
-  },
-  {
     title: 'Frontend Development',
-    description: 'I am a good web developer',
     imgUrL: images.about02,
   },
   {
     title: 'Backend Development',
-    description: 'I am a good web developer',
     imgUrL: images.about03,
   },
   {
+    title: 'Amazon Web Services',
+    imgUrL: images.cloud,
+  },
+  {
     title: 'MERN Stack',
-    description: 'I am a good web developer',
     imgUrL: images.about04,
   },
 ];
