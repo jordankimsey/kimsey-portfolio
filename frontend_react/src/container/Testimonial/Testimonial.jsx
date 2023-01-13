@@ -16,7 +16,7 @@ const myTestimonials = [
     compnay: 'Accenture',
     imgUrl: images.accenture,
     feedback:
-      'Jordan has been a pleasure to work with and has been a strong client facing presence on the MSRB EMMA project. He is efficient, quickly working through stories while also helping out his fellow, more junior, developers. He responds professionally to feedback and asks for additional details when needed. On client calls, he gives input and works to solve problems that might arise very quickly. One example was a pretty big state map ticket he worked on. There was a bit of issue with the responsive behavior, it was resolved very quickly and demoed right after for approval. He produces quality work and has great work ethic. I would love to work with Jordan again.',
+      'Jordan has been a pleasure to work with and has been a strong client facing presence on the EMMA project. He is efficient, quickly working through stories while also helping out his fellow, more junior, developers. He responds professionally to feedback and asks for additional details when needed. On client calls, he gives input and works to solve problems that might arise very quickly. One example was a pretty big state map ticket he worked on. There was a bit of issue with the responsive behavior, it was resolved very quickly and demoed right after for approval. He produces quality work and has great work ethic. I would love to work with Jordan again.',
   },
   {
     name: 'Diqi',
