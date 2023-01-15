@@ -1,18 +1,36 @@
 import React from 'react';
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 
 const SocialMedia = () => {
   return (
     <div className='app__social'>
       <div>
-        <BsTwitter />
+        <a
+          href='https://www.linkedin.com/in/isaac-kimsey-bab62949/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <BsLinkedin />
+        </a>
       </div>
       <div>
-        <FaFacebookF />
+        <a
+          href='https://github.com/jordankimsey'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <BsGithub />
+        </a>
       </div>
       <div>
-        <BsInstagram />
+        <a
+          href='https://www.facebook.com/jordan.kimsey/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FaFacebookF />
+        </a>
       </div>
     </div>
   );
