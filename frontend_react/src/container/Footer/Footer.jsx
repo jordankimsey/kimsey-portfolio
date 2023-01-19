@@ -17,7 +17,6 @@ const Footer = () => {
 
   const { name, email, message } = formData;
 
-  console.log(process.env.REACT_APP_EMAILJS_USER_ID);
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
