@@ -71,25 +71,23 @@ const Skills = () => {
 
         <motion.div className='app__skills-exp'>
           {myExperiences.map((work, index) => (
-            <>
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
-                className='app__skills-exp-works'
-                id={work.company}
-                key={work.company + index}
-              >
-                <h4 className='bold-text'>{work.name}</h4>
-                <p className='p-text'>{work.company}</p>
-                <ul>
-                  {work.desc.map((item, index) => (
-                    <li key={item + index} className='p-text'>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </>
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              className='app__skills-exp-works'
+              id={work.company}
+              key={work.company + index}
+            >
+              <h4 className='bold-text'>{work.name}</h4>
+              <p className='p-text'>{work.company}</p>
+              <ul>
+                {work.desc.map((item, index) => (
+                  <li key={item + index} className='p-text'>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           ))}
         </motion.div>
       </div>
