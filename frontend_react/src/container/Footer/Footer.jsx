@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
+import emailjs from '@emailjs/browser';
 
 import './Footer.scss';
 
@@ -25,16 +26,30 @@ const Footer = () => {
     setLoading(true);
 
     const contact = {
-      _type: 'contact',
       name: name,
       email: email,
       message: message,
     };
 
-    client.create(contact).then(() => {
-      setLoading(false);
-      setIsFormSubmitted(true);
-    });
+    emailjs
+      .send(
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
+        contact,
+        process.env.EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          setLoading(false);
+          setIsFormSubmitted(true);
+        },
+        (error) => {
+          console.log(error);
+          setLoading(false);
+          isFormSubmitted(false);
+        }
+      );
   };
 
   return (

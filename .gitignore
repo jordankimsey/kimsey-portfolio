@@ -49,3 +49,4 @@ backend_sanity/*.pem
 
 # Typescript
 backend_sanity/*.tsbuildinfo
+frontend_react/.env
