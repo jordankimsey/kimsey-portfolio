@@ -20,7 +20,7 @@ const myWork = [
     projectLink: 'https://react-dashboard-inky-alpha.vercel.app/ecommerce',
     codeLink: 'https://github.com/jordankimsey/react-dashboard',
     imgUrl: images.dashboard,
-    tags: ['React JS', 'All'],
+    tags: ['React', 'All'],
   },
   {
     title: 'Easy Bank Landing Page',
@@ -67,7 +67,7 @@ const Work = () => {
         My <span>Works</span>
       </h2>
       <div className='app__work-filter'>
-        {['Next.Js', 'React JS', 'Node', 'All'].map((item, index) => (
+        {['Next.Js', 'React', 'Node.js', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
