@@ -30,6 +30,15 @@ const myWork = [
     imgUrl: images.easybank,
     tags: ['Next.Js', 'All'],
   },
+  {
+    title: 'Todo Application',
+    description:
+      'Built using Next.js, Typescript, tailwind.css, Express and MongoDB',
+    projectLink: 'https://next-13-todo-app.vercel.app/',
+    codeLink: 'https://github.com/jordankimsey/next_13_todo_app',
+    imgUrl: images.easybank,
+    tags: ['Node.js','Next.Js', 'All'],
+  },
 ];
 
 const Work = () => {
@@ -58,7 +67,7 @@ const Work = () => {
         My <span>Works</span>
       </h2>
       <div className='app__work-filter'>
-        {['Next.Js', 'React JS', 'All'].map((item, index) => (
+        {['Next.Js', 'React JS', 'Node','All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
