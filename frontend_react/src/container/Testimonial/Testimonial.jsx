@@ -12,6 +12,20 @@ const myBrands = [
 
 const myTestimonials = [
   {
+    name: 'Linda',
+    compnay: 'Accenture',
+    imgUrl: images.accenture,
+    feedback:
+      "Jordan is an exemplary Software Engineer, a great example of a self-starter, seeks to add value, is proactive in supporting others, and thoroughly and consistently delivers with great quality. I am very impressed with Jordan's knowledge, experience, and eagerness to do and learn more. Jordan excelled far beyond expectations at his level. In fact, Jordan performed extremely well as an unofficial Junior Anchor on this team due to his ability to grasp complex and sometimes ambiguous tasks. Jordan always presented a positive attitude and sought to overcome obstacles through research and/or workarounds. Jordan was an absolute pleasure to work with and is performing far beyond expectations. I look forward to working with Jordan again.",
+  },
+  {
+    name: 'Greg',
+    compnay: 'Accenture',
+    imgUrl: images.accenture,
+    feedback:
+      "Jordan consistently exemplified the best of what Accenture and the CIC bring to clients. This was evident by his diligent adherence to Pair Programming, and to Communication. At every standup, he started with, 'Yesterday I paired with...and worked on...' and then he would end by saying, 'Today I'm pairing with...and working on...' This helped maintain our standards, and served as a model for the other engineers, some of whom were not accustomed to the CIC ways of working. Jordan also sought opportunities to do more than code. He assisted me in creating a list of things the client could do to improve, and was able to communicate the team's needs to the client, which assisted in stakeholder management. ",
+  },
+  {
     name: 'Tarnisha',
     compnay: 'Accenture',
     imgUrl: images.accenture,
@@ -25,13 +39,7 @@ const myTestimonials = [
     feedback:
       "Jordan is a very talented and productive developer. You can always rely on him to deliver quality work. He is always there for his fellow teammates whenever others need his help. Keep up the great work, and don't forget to invest some time on expanding your skillset.",
   },
-  {
-    name: 'Greg',
-    compnay: 'Accenture',
-    imgUrl: images.accenture,
-    feedback:
-      "Jordan consistently exemplified the best of what Accenture and the CIC bring to clients. This was evident by his diligent adherence to Pair Programming, and to Communication. At every standup, he started with, 'Yesterday I paired with...and worked on...' and then he would end by saying, 'Today I'm pairing with...and working on...' This helped maintain our standards, and served as a model for the other engineers, some of whom were not accustomed to the CIC ways of working. Jordan also sought opportunities to do more than code. He assisted me in creating a list of things the client could do to improve, and was able to communicate the team's needs to the client, which assisted in stakeholder management. ",
-  },
+
   {
     name: 'Jerry',
     compnay: 'Accenture',
