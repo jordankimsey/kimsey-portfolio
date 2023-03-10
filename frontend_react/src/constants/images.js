@@ -23,6 +23,7 @@ import express from '../assets/express.png';
 import airportHub from '../assets/airport-hub.jpg';
 import easybank from '../assets/easybank.jpg';
 import dashboard from '../assets/dashboard.jpg';
+import todo from '../assets/todo.png';
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -74,7 +75,7 @@ export default {
   circle,
 
   amazon,
-
+todo,
   next,
   aws,
 };
