@@ -19,11 +19,14 @@ import next from '../assets/Nextjs-logo.svg';
 import aws from '../assets/aws.png';
 import mongodb from '../assets/mongodb.png';
 import express from '../assets/express.png';
+import springIcon from '../assets/spring_boot.png'
 
 import airportHub from '../assets/airport-hub.jpg';
 import easybank from '../assets/easybank.jpg';
 import dashboard from '../assets/dashboard.jpg';
 import todo from '../assets/todo.png';
+import ipAddress from '../assets/ip_address_tracker.jpg';
+import springBoot from '../assets/graphql_spring_boot.jpg'
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -47,6 +50,8 @@ export default {
   mongodb,
   express,
   airportHub,
+  ipAddress,
+  springBoot,
   easybank,
   dashboard,
   jordan,
@@ -65,6 +70,7 @@ export default {
   node,
   python,
   react,
+  springIcon,
 
   sass,
   typescript,

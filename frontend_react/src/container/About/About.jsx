@@ -37,7 +37,7 @@ const About = () => {
         Accenture's cloud innovation team. We specialize in building custom
         applications for clients on various cloud providers. The technologies
         I'm currently using are AWS, Next/React.js, Typescript, GraphQL,
-        Storybook, Contentful CMS, and MaterialUI.
+        SpringBoot, Storybook, Contentful CMS, and MaterialUI.
       </h4>
 
       <div className='app__profiles'>

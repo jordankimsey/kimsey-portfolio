@@ -8,6 +8,7 @@ const mySkills = [
   { name: 'React', icon: images.react },
   { name: 'Next.js', icon: images.next },
   { name: 'Typescript', icon: images.typescript },
+  { name: 'SpringBoot', icon: images.springIcon },
   { name: 'Javascript', icon: images.javascript },
   { name: 'MaterialUI', icon: images.mu5 },
   { name: 'Express', icon: images.express },
@@ -27,7 +28,7 @@ const myExperiences = [
     name: 'Software Engineer',
     company: 'Accenture',
     desc: [
-      'Engineered innovative modern applications utilizing Next.js, React, Typescript, GraphQL, and AWS.',
+      'Engineered innovative modern applications utilizing Next.js, React, Typescript, GraphQL, Java SpringBoot and AWS.',
       "Worked closely with internal and client teams in an agile environment to deliver high-quality reusable software according to client's business objectives and needs.",
       'Helped lead client stakeholder technical demos and team retrospective meetings.',
       'Help lead coding pairing sessions and train and onboard new Engineers.',

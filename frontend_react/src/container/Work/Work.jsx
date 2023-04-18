@@ -7,12 +7,29 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 
 const myWork = [
   {
+    title: 'IP Address Tracker',
+    description: 'Built using Next.js, tailwind, and Leaflet.',
+    projectLink: 'https://next-ip-tracker-six.vercel.app/',
+    codeLink: 'https://github.com/jordankimsey/next_ip_tracker',
+    imgUrl: images.ipAddress,
+    tags: ['Next.Js', 'All'],
+  },
+
+  {
     title: 'AirportHub',
     description: 'Built using Next.js/React, Firebase and tailwind.',
     projectLink: 'https://airport-hub.vercel.app/',
     codeLink: 'https://github.com/jordankimsey/airportHub',
     imgUrl: images.airportHub,
     tags: ['Next.Js', 'All'],
+  },
+  {
+    title: 'Enterprise Store API',
+    description: 'Built using Java SpringBoot, GraphQL, JPA, and SQL',
+    // projectLink: 'https://next-ip-tracker-six.vercel.app/',
+    codeLink: 'https://github.com/jordankimsey/spring_boot_store_api_graphql',
+    imgUrl: images.springBoot,
+    tags: ['Java', 'All'],
   },
   {
     title: 'Shoppy Dashboard',
@@ -67,7 +84,7 @@ const Work = () => {
         My <span>Works</span>
       </h2>
       <div className='app__work-filter'>
-        {['Next.Js', 'React', 'Node.js', 'All'].map((item, index) => (
+        {['Java','Next.Js', 'React', 'Node.js', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
